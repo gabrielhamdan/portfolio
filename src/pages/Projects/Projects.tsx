@@ -16,9 +16,9 @@ export default function Projects() {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await github<RepoData[]>("/users/gabrielhamdan/repos");
+                const response = await github<RepoData[]>("/users/gabrielhamdan/repos?per_page=100&page=1");
 
-                setProjects(response.data?.filter(repo => repo.topics.includes("portfolio")));
+                setProjects(response.data?.filter(repo => repo.topics.includes("portfolio-project")));
             } catch (e) {
                 console.error(e);
             }
@@ -31,7 +31,7 @@ export default function Projects() {
         <div className="projects-grid">
             {
                 projects?.map(project => (
-                    <ProjectCard link={project.html_url} stack={project.topics.filter(s => s !== "portfolio")} title={project.name} description={project.description} />
+                    <ProjectCard link={project.html_url} stack={project.topics.filter(s => s !== "portfolio-project")} title={project.name} description={project.description} />
                 ))
             }
         </div>
