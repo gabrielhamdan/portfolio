@@ -1,0 +1,21 @@
+.portrait-container {
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.portrait {
+  width: 35%;
+  filter: drop-shadow(10px 10px 0 black);
+}
+
+.content-container {
+  height: 100%;
+  flex-direction: column;
+  max-width: 40%;
+  margin: 75px;
+  justify-content: center;
+}
+
+.about-container p {
+    margin-bottom: 20px;
+}

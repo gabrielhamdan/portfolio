@@ -1,0 +1,46 @@
+.project-card-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+}
+
+.project-card-text-container {
+    color: white;
+    font-size: 12pt;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+.project-card-text-container p {
+    padding: 0;
+}
+
+.project-card-text-container h3 {
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.project-card-container:hover {
+    background-color: white;
+}
+
+.project-card-container:hover h3,
+.project-card-container:hover p {
+    color: black;
+    text-decoration: underline;
+}
+
+.project-card-container:hover .tag-container {
+    visibility: hidden;
+}
+
+.tag-container {
+    display: flex;
+    width: 100%;
+    padding: 30px 40px;
+}

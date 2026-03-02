@@ -1,0 +1,70 @@
+.main-home {
+    display: flex;
+    height: 100vh;
+}
+
+.left,
+.right {
+    flex: 1;
+    display: flex;
+}
+
+.left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-container {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.divider {
+    width: 1px;
+    height: 80vh;
+    background: black;
+    align-self: center;
+}
+
+.right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    padding: 25px;
+    justify-content: center;
+}
+
+.content {
+    overflow-y: scroll;
+    padding: 50px;
+    height: 50%;
+    justify-content: left;
+    align-items: flex-start;
+    width: 80%;
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+}
