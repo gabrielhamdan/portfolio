@@ -52,19 +52,50 @@
     align-items: flex-start;
     width: 80%;
 
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 10%,
-        black 90%,
-        transparent 100%
-    );
+    -webkit-mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%);
 
-    mask-image: linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 10%,
-        black 90%,
-        transparent 100%
-    );
+    mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%);
+}
+
+@media (max-width: 768px) {
+
+    .main-home {
+        flex-direction: column;
+    }
+
+    .left {
+        padding: 1rem;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .contact-container {
+        position: static;
+        transform: none;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .right {
+        padding: 0;
+    }
+
+    .content {
+        height: auto;
+        padding: 1rem;
+        width: 90%;
+        overflow-x: hidden;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
 }

@@ -4,3 +4,10 @@
     left: 10px;
     flex-direction: row;
 }
+
+@media (max-width: 768px) {
+    .language-container {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+}
